@@ -8,88 +8,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    font-family: 'Ubuntu', sans-serif;
-    background-color: #111;
-    color: #e0e0e0;
-    line-height: 1.6;
-}
-
-.container {
-    max-width: 900px;
-    margin: 80px auto;
-    padding: 0 20px;
-}
-
-h1 {
-    font-size: 32px;
-    margin-bottom: 5px;
-}
-
-.subtitle {
-    font-size: 16px;
-    color: #aaa;
-    margin-bottom: 20px;
-}
-
-.accent {
-    width: 80px;
-    height: 3px;
-    background: #E95420;
-    margin: 20px 0 40px 0;
-}
-
-.section {
-    margin-bottom: 40px;
-}
-
-.shell {
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: 14px;
-    color: #ccc;
-}
-
-button {
-    background: none;
-    border: 1px solid #444;
-    color: #ccc;
-    padding: 8px 14px;
-    cursor: pointer;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-button:hover {
-    border-color: #E95420;
-    color: #fff;
-}
-
-.hidden {
-    display: none;
-}
-
-a {
-    color: #E95420;
-    text-decoration: none;
-}
-
-.footer {
-    color: #666;
-    font-size: 13px;
-}
+body { margin:0; font-family:'Ubuntu',sans-serif; background:#111; color:#e0e0e0; line-height:1.6; }
+.container { max-width:900px; margin:80px auto; padding:0 20px; }
+h1 { font-size:32px; margin-bottom:5px; }
+.subtitle { font-size:16px; color:#aaa; margin-bottom:20px; }
+.accent { width:80px; height:3px; background:#E95420; margin:20px 0 40px 0; }
+.section { margin-bottom:40px; }
+.shell { font-family:'Ubuntu Mono',monospace; font-size:14px; color:#ccc; }
+button { background:none; border:1px solid #444; color:#ccc; padding:8px 14px; cursor:pointer; }
+button:hover { border-color:#E95420; color:#fff; }
+.hidden { display:none; }
+a { color:#E95420; text-decoration:none; }
+.footer { color:#666; font-size:13px; }
+.notice { color:#888; font-size:14px; margin-top:10px; }
 </style>
 
 <script>
-function toggle(id) {
-    var x = document.getElementById(id);
-    if (x.classList.contains("hidden")) {
-        x.classList.remove("hidden");
-    } else {
-        x.classList.add("hidden");
-    }
+function toggle(id){
+  var x=document.getElementById(id);
+  x.classList.toggle("hidden");
 }
 </script>
-
 </head>
 <body>
 
@@ -121,7 +60,6 @@ Stabiler 24/7 Betrieb EPD · RHEL Plattform · Container · Zertifikatsmanagemen
 
 <div class="section">
 <button onclick="toggle('more')">Weitere berufliche Stationen anzeigen</button>
-
 <div id="more" class="hidden shell" style="margin-top:20px;">
 NAZ / Bundesamt für Bevölkerungsschutz (2021–2022)<br>
 Bedag Informatik AG (2018–2021)<br>
@@ -130,8 +68,8 @@ Weitere Stationen 1995–2007 im Banken- und Konzernumfeld auf Anfrage
 </div>
 </div>
 
-<div class="section">
-<a href="cv.pdf">CV als PDF herunterladen</a>
+<div class="section notice">
+CV als PDF auf Anfrage verfügbar.
 </div>
 
 <div class="section footer">
@@ -140,6 +78,5 @@ Kontakt: t.weidemann@itenos.ch
 </div>
 
 </div>
-
 </body>
 </html>
