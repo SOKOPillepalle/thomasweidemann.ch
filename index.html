@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thomas Weidemann – Senior Linux Infrastructure</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #111;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.accent {
+    width: 80px;
+    height: 3px;
+    background: #E95420;
+    margin: 20px 0 40px 0;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.shell {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    color: #ccc;
+}
+
+button {
+    background: none;
+    border: 1px solid #444;
+    color: #ccc;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+button:hover {
+    border-color: #E95420;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    color: #E95420;
+    text-decoration: none;
+}
+
+.footer {
+    color: #666;
+    font-size: 13px;
+}
+</style>
+
+<script>
+function toggle(id) {
+    var x = document.getElementById(id);
+    if (x.classList.contains("hidden")) {
+        x.classList.remove("hidden");
+    } else {
+        x.classList.add("hidden");
+    }
+}
+</script>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Thomas Weidemann</h1>
+<div class="subtitle">Senior Linux Infrastructure & Platform Operator</div>
+<div class="accent"></div>
+
+<div class="section">
+<p>
+Über 20 Jahre Erfahrung im stabilen Betrieb geschäftskritischer 24/7-Infrastrukturen
+im Behörden-, Banken- und Healthcare-Umfeld.
+Fokus auf Verfügbarkeit, Performance und nachhaltige Stabilisierung komplexer Produktionssysteme.
+</p>
+</div>
+
+<div class="section shell">
+RHEL · Debian · Kubernetes · Docker · Ansible · CI/CD · Monitoring · KRITIS · 24/7 Betrieb
+</div>
+
+<div class="section">
+<h3>Aktuelle Rolle</h3>
+<p><strong>Schweizerische Post AG</strong> – ICT Application Manager (seit 01/2023)</p>
+<p class="shell">
+Stabiler 24/7 Betrieb EPD · RHEL Plattform · Container · Zertifikatsmanagement · Pikett
+</p>
+</div>
+
+<div class="section">
+<button onclick="toggle('more')">Weitere berufliche Stationen anzeigen</button>
+
+<div id="more" class="hidden shell" style="margin-top:20px;">
+NAZ / Bundesamt für Bevölkerungsschutz (2021–2022)<br>
+Bedag Informatik AG (2018–2021)<br>
+UBS AG (2007–2015)<br>
+Weitere Stationen 1995–2007 im Banken- und Konzernumfeld auf Anfrage
+</div>
+</div>
+
+<div class="section">
+<a href="cv.pdf">CV als PDF herunterladen</a>
+</div>
+
+<div class="section footer">
+Lostorf (SO) · Schweiz<br>
+Kontakt: t.weidemann@itenos.ch
+</div>
+
+</div>
+
+</body>
+</html>
