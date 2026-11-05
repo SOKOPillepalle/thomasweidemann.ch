@@ -1,82 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thomas Weidemann – Senior Linux Infrastructure</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
-
-<style>
-body { margin:0; font-family:'Ubuntu',sans-serif; background:#111; color:#e0e0e0; line-height:1.6; }
-.container { max-width:900px; margin:80px auto; padding:0 20px; }
-h1 { font-size:32px; margin-bottom:5px; }
-.subtitle { font-size:16px; color:#aaa; margin-bottom:20px; }
-.accent { width:80px; height:3px; background:#E95420; margin:20px 0 40px 0; }
-.section { margin-bottom:40px; }
-.shell { font-family:'Ubuntu Mono',monospace; font-size:14px; color:#ccc; }
-button { background:none; border:1px solid #444; color:#ccc; padding:8px 14px; cursor:pointer; }
-button:hover { border-color:#E95420; color:#fff; }
-.hidden { display:none; }
-.footer { color:#666; font-size:13px; margin-top:60px; }
-.small-note { color:#888; font-size:14px; margin-top:20px; }
-a { color:#E95420; text-decoration:none; }
-</style>
-
-<script>
-function toggle(id){
-  var x=document.getElementById(id);
-  x.classList.toggle("hidden");
-}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thomas Weidemann – Linux- und Applikationsspezialist</title>
+<meta name="description" content="Thomas Weidemann, System- und Applikationsspezialist Linux: über 20 Jahre Betrieb geschäftskritischer 24/7-Systeme in Bund, Banken und Konzernen. Verfügbar als Angestellter (mit RAV-Einarbeitungszuschuss), Freelancer oder selbstständiger Mitarbeiter.">
+<meta name="theme-color" content="#f3f6fb">
+<meta property="og:title" content="Thomas Weidemann – Linux- und Applikationsspezialist">
+<meta property="og:description" content="Über 20 Jahre Betrieb geschäftskritischer 24/7-Systeme. Kurzfristig verfügbar: Anstellung, Freelance oder selbstständige Mitarbeit.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1220'/%3E%3Cpath d='M9 10h14M16 10v13' stroke='%2322d3ee' stroke-width='3' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Thomas Weidemann","jobTitle":"System- und Applikationsspezialist Linux","email":"t.weidemann@itenos.ch","address":{"@type":"PostalAddress","addressLocality":"Lostorf","addressRegion":"SO","addressCountry":"CH"},"url":"https://thomasweidemann.ch"}
 </script>
 </head>
 <body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
 
-<div class="container">
+<header class="top" id="top">
+  <a class="brand" href="#top" aria-label="Thomas Weidemann, Seitenanfang">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span>Thomas Weidemann</span>
+  </a>
+  <nav class="nav" aria-label="Hauptnavigation">
+    <a href="#angebot">Angebot</a>
+    <a href="#kompetenzen">Kompetenzen</a>
+    <a href="#erfahrung">Erfahrung</a>
+    <a href="#kontakt" class="btn btn-small">Kontakt</a>
+  </nav>
+</header>
 
-<h1>Thomas Weidemann</h1>
-<div class="subtitle">Senior Linux Infrastructure & Platform Operator</div>
-<div class="accent"></div>
+<main id="inhalt">
 
-<div class="section">
-<p>
-Über 20 Jahre Erfahrung im stabilen Betrieb geschäftskritischer 24/7‑Infrastrukturen
-im Behörden‑, Banken‑ und Healthcare‑Umfeld.
-Fokus auf Verfügbarkeit, Performance und nachhaltige Stabilisierung komplexer Produktionssysteme.
-</p>
-</div>
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <svg class="orbits" viewBox="0 0 800 800" fill="none">
+      <circle cx="400" cy="400" r="150" />
+      <circle cx="400" cy="400" r="250" />
+      <circle cx="400" cy="400" r="350" />
+      <g class="spin spin-a"><circle cx="400" cy="250" r="6" /></g>
+      <g class="spin spin-b"><circle cx="400" cy="150" r="5" /></g>
+      <g class="spin spin-c"><circle cx="400" cy="50" r="4" /></g>
+    </svg>
+  </div>
 
-<div class="section shell">
-RHEL · Debian · Kubernetes · Docker · Ansible · CI/CD · Monitoring · KRITIS · 24/7 Betrieb
-</div>
+  <div class="hero-text">
+    <p class="avail"><span class="pulse" aria-hidden="true"></span>Kurzfristig verfügbar</p>
+    <h1><span class="nb">Linux-Systeme,</span><br>die einfach laufen.</h1>
+    <p class="lead">Ich bin <strong>Thomas Weidemann</strong>, System- und Applikationsspezialist Linux. Seit über 20 Jahren halte ich geschäftskritische Systeme in Bundes-, Banken- und Konzernumgebungen stabil, rund um die Uhr, wenn nötig auch direkt vor Ort.</p>
+    <div class="cta">
+      <a class="btn" href="mailto:t.weidemann@itenos.ch?subject=Anfrage%20Zusammenarbeit">Gespräch vereinbaren</a>
+      <a class="btn btn-ghost" href="#angebot">So können wir zusammenarbeiten</a>
+    </div>
+  </div>
 
-<div class="section">
-<h3>Aktuelle Rolle</h3>
-<p><strong>Schweizerische Post AG</strong> – ICT Application Manager (seit 01/2023)</p>
-<p class="shell">
-Stabiler 24/7 Betrieb EPD · RHEL Plattform · Container · Zertifikatsmanagement · Pikett
-</p>
-</div>
+  <div class="hero-visual">
+    <figure class="portrait">
+      <i class="corner tl" aria-hidden="true"></i><i class="corner tr" aria-hidden="true"></i>
+      <i class="corner bl" aria-hidden="true"></i><i class="corner br" aria-hidden="true"></i>
+      <img src="assets/thomas.webp" width="900" height="923" alt="Porträt von Thomas Weidemann" fetchpriority="high">
+    </figure>
+    <dl class="status" aria-label="Kurzprofil">
+      <div><dt>Rolle</dt><dd>Linux / RHEL, Application Operations</dd></div>
+      <div><dt>Betrieb</dt><dd>24/7, Pikett, 1st–3rd Level</dd></div>
+      <div><dt>Einsatz</dt><dd>vor Ort und remote</dd></div>
+      <div><dt>Standort</dt><dd>Lostorf (SO), Schweiz</dd></div>
+    </dl>
+  </div>
+</section>
 
-<div class="section">
-<button onclick="toggle('more')">Weitere berufliche Stationen anzeigen</button>
-<div id="more" class="hidden shell" style="margin-top:20px;">
-NAZ / Bundesamt für Bevölkerungsschutz (2021–2022)<br>
-Bedag Informatik AG (2018–2021)<br>
-UBS AG (2007–2015)<br>
-Weitere Stationen 1995–2007 im Banken‑ und Konzernumfeld auf Anfrage
-</div>
-</div>
+<section class="strip" aria-label="Umgebungen">
+  <p>Zuletzt im Einsatz bei</p>
+  <ul>
+    <li>Post CH</li><li>Bundesverwaltung</li><li>Bedag</li><li>UBS</li>
+  </ul>
+  <p>Früher, 1995 bis 2007</p>
+  <ul class="earlier">
+    <li>Credit Suisse</li><li>EZB</li><li>Commerzbank</li><li>ING-DiBa</li><li>Hauck &amp; Aufhäuser</li><li>Siemens</li><li>thyssenkrupp</li><li>Deutsche Post</li><li>TUI</li>
+  </ul>
+</section>
 
-<div class="section small-note">
-Bei Interesse stelle ich meinen vollständigen Lebenslauf gerne zur Verfügung.
-</div>
+<section class="block" id="angebot">
+  <div class="block-head">
+    <h2>Drei Wege, zusammenzuarbeiten</h2>
+    <p>Je nachdem, was bei Ihnen gerade gebraucht wird: eine feste Stelle, ein befristeter Einsatz oder Verstärkung für ein Projekt.</p>
+  </div>
+  <div class="offers">
+    <article class="offer">
+      <h3>Als Angestellter</h3>
+      <p>Ich verstärke Ihr Team fest und bringe Betriebserfahrung vom ersten Tag mit.</p>
+      <p class="offer-note"><strong>RAV-Einarbeitungszuschuss:</strong> Für die Einarbeitung ist ein Zuschuss über das RAV möglich, bis zu drei Monate. Voraussetzungen und Ablauf klären wir gern im Gespräch.</p>
+    </article>
+    <article class="offer">
+      <h3>Als Freelancer</h3>
+      <p>Ich übernehme klar umrissene Aufgaben oder Betriebsphasen auf Mandatsbasis, etwa Releases, Störungsanalyse oder Dokumentation.</p>
+      <p class="offer-note">Flexibel im Umfang, remote oder vor Ort.</p>
+    </article>
+    <article class="offer">
+      <h3>Als selbstständiger Mitarbeiter</h3>
+      <p>Ich arbeite eingebunden in Ihr Team, über Ihre Projekt- oder Personalpartner, mit Ihren Tools und Prozessen.</p>
+      <p class="offer-note">Auch kurzfristig, auch für Pikett und Stellvertretung.</p>
+    </article>
+  </div>
+</section>
 
-<div class="section footer">
-Lostorf (SO) · Schweiz<br>
-Kontakt: <a href="mailto:t.weidemann@itenos.ch">t.weidemann@itenos.ch</a>
-</div>
+<section class="block block-dark" id="kompetenzen">
+  <div class="block-head">
+    <h2>Was ich mitbringe</h2>
+    <p>Betrieb ist mehr als Technik: sauber analysieren, sauber dokumentieren, sauber abstimmen.</p>
+  </div>
+  <div class="skills">
+    <div class="skill">
+      <h3>Plattform &amp; Betrieb</h3>
+      <ul>
+        <li>Enterprise Linux / RHEL</li>
+        <li>Application Operations und Plattformbetrieb</li>
+        <li>24/7-Betrieb, Pikettorganisation</li>
+        <li>1st-, 2nd- und 3rd-Level-Support</li>
+        <li>Incident- und Problem-Analyse</li>
+      </ul>
+    </div>
+    <div class="skill">
+      <h3>Automatisierung &amp; Container</h3>
+      <ul>
+        <li>Ansible / Ansible Tower</li>
+        <li>Docker, Kubernetes, OpenShift im Betriebsumfeld</li>
+        <li>Release- und Deployment-Prozesse</li>
+        <li>Installation neuer Applikationsreleases</li>
+      </ul>
+    </div>
+    <div class="skill">
+      <h3>Middleware &amp; Sicherheit</h3>
+      <ul>
+        <li>Apache, Tomcat, JBoss</li>
+        <li>LDAP / SSO</li>
+        <li>PKI und Zertifikatsmanagement</li>
+        <li>Einsatz in sicherheitsrelevanten Umgebungen</li>
+      </ul>
+    </div>
+    <div class="skill">
+      <h3>Monitoring &amp; Zusammenarbeit</h3>
+      <ul>
+        <li>Splunk, Nagios, AppDynamics</li>
+        <li>Betriebsdokumentation und Runbooks</li>
+        <li>Abstimmung mit Netzwerk-, Infrastruktur-, Security- und Lieferantenteams</li>
+        <li>Change-, Incident- und Release-Management</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-</div>
+<section class="block" id="erfahrung">
+  <div class="block-head">
+    <h2>Stationen, die tragen</h2>
+    <p>Von regulierten Bankprozessen bis zur Einsatzinformatik des Bundes. Überall dort, wo Ausfälle teuer sind.</p>
+  </div>
+  <ol class="timeline">
+    <li>
+      <time>01/2023 – 07/2026</time>
+      <div>
+        <h3>ICT-Applikations-Manager</h3>
+        <p class="where">Post CH Kommunikation AG, Bern/Zollikofen</p>
+        <p>Applikationsbetrieb im EPD-Umfeld auf RHEL-Plattformen: Störungen strukturiert beheben, Releases planen und installieren, Deployments mit Ansible/Tower automatisieren, Zertifikate und Schnittstellen pflegen.</p>
+      </div>
+    </li>
+    <li>
+      <time>04/2021 – 12/2022</time>
+      <div>
+        <h3>Senior ICT-Systemspezialist Linux</h3>
+        <p class="where">Coopers Group AG, Einsatz bei NAZ/FUB, Zürich</p>
+        <p>Erste Ansprechstelle im 7x24-Pikett für die Linux-basierte Einsatzinformatik: Red-Hat-Server, Ubuntu-Clients, neue Releases testen und installieren.</p>
+      </div>
+    </li>
+    <li>
+      <time>07/2018 – 02/2021</time>
+      <div>
+        <h3>Senior System Spezialist Linux</h3>
+        <p class="where">Bedag AG, Bern</p>
+        <p>Apache-, Tomcat- und JBoss-Applikationen auf RHEL, Performance-Tuning, Incident Management, Automatisierung mit Ansible, Third-Level-Support.</p>
+      </div>
+    </li>
+    <li>
+      <time>04/2016 – 06/2018</time>
+      <div>
+        <h3>Solaris / RHEL System Administrator</h3>
+        <p class="where">Suppliance AG, Einsatz bei ISCeco, Bern</p>
+        <p>Betrieb, Tuning und Überwachung von Servern, Optimierung der eZIVI-Applikation, Monitoring mit Splunk, Nagios und AppDynamics.</p>
+      </div>
+    </li>
+    <li>
+      <time>12/2007 – 05/2015</time>
+      <div>
+        <h3>Servicemanager / Delivery Specialist</h3>
+        <p class="where">UBS AG, Zürich</p>
+        <p>Geschäftskritische Solaris- und RHEL-Systeme im 24/7-Umfeld für TOP50-Bankenanwendungen, Change-, Incident- und Release-Management in regulierten Prozessen.</p>
+      </div>
+    </li>
+    <li>
+      <time>1995 – 2007</time>
+      <div>
+        <h3>Weitere Stationen</h3>
+        <p class="where">Credit Suisse, EZB, Commerzbank, ING-DiBa, Hauck &amp; Aufhäuser, Siemens, thyssenkrupp, Deutsche Post, TUI u. a.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section class="block block-soft" id="lernen">
+  <div class="split">
+    <div>
+      <h2>Bleibt in Bewegung</h2>
+      <p>Technik ändert sich, deshalb lerne ich weiter. Zuletzt Python 3, Docker, Kubernetes und Ansible, dazu Kurse zu SQL und DevOps. Zuhause läuft ein Home-Lab mit Docker, Pi-hole und Heimautomatisierung.</p>
+    </div>
+    <ul class="learn">
+      <li><span>2024</span>Python 3, LinuxHotel</li>
+      <li><span>2023</span>Docker, Kubernetes, Ansible, Udemy</li>
+      <li><span>2019</span>Python, SQL, DevOps, Udemy</li>
+      <li><span>2018</span>Kubernetes Basics, edX</li>
+    </ul>
+  </div>
+</section>
+
+<section class="contact" id="kontakt">
+  <div class="contact-inner">
+    <h2>Lassen Sie uns reden.</h2>
+    <p>Eine kurze Nachricht genügt. Ich melde mich rasch, und wir klären, ob und wie ich Ihnen helfen kann.</p>
+    <div class="cta">
+      <a class="btn" href="mailto:t.weidemann@itenos.ch?subject=Anfrage%20Zusammenarbeit">t.weidemann@itenos.ch</a>
+      <a class="btn btn-ghost-light" href="tel:+41768178250">+41 76 817 82 50</a>
+    </div>
+    <ul class="facts">
+      <li>Kurzfristig verfügbar</li>
+      <li>Eintritt und Präsenz vor Ort nach Absprache</li>
+      <li>Remote-Zusammenarbeit gewohnt</li>
+      <li>Deutsch (Muttersprache), Englisch (gut)</li>
+      <li>Lebenslauf und Referenzen auf Anfrage</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <span>© <span id="yr">2026</span> Thomas Weidemann · Lostorf (SO), Schweiz</span>
+  <a href="#top">Nach oben</a>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
